@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!-- saved from url=(0035)http://localhost:62906/Default.aspx -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>
+	Language Academy Dashboard
+</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f4f6f9; margin: 0; padding: 20px; color: #333; }
+        .container { max-width: 1100px; margin: 0 auto; }
+        .header { background: #4A154B; color: white; padding: 20px; border-radius: 8px; margin-bottom: 20px; text-align: center; }
+        .grid { display: grid; grid-template-columns: 2fr 1fr; gap: 20px; }
+        .card { background: white; padding: 25px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); margin-bottom: 20px; }
+        h2 { color: #4A154B; border-bottom: 2px solid #f4f6f9; padding-bottom: 10px; margin-top: 0; }
+        .price-tag { display: inline-block; background: #E01E5A; color: white; padding: 8px 15px; border-radius: 20px; font-weight: bold; margin-right: 10px; }
+        .metric-box { display: inline-block; background: #f4f6f9; padding: 15px; border-radius: 6px; text-align: center; min-width: 100px; margin-right: 15px; }
+        .metric-num { font-size: 24px; font-weight: bold; color: #4A154B; }
+        .bar-container { background-color: #e0e0e0; border-radius: 12px; margin: 15px 0; position: relative; height: 25px; }
+        .bar-fill { background-color: #2EB67D; height: 100%; border-radius: 12px; text-align: right; line-height: 25px; color: white; padding-right: 10px; font-weight: bold; font-size: 13px; }
+        .subject-row { margin-bottom: 15px; }
+        .subject-name { font-weight: bold; margin-bottom: 5px; }
+    </style>
+</head>
+<body>
+    <form method="post" action="http://localhost:62906/Default.aspx" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="fi7JQ7m1UBtPDH51FN27KidU4fdm15u1NFMeSc4K+QVexqTHThckpHMoVMl+WBoqFhJB82MhEIjYMZKiL6qR4soCypZFmAo+mP4ISIPw9Xkj4Q12RY6eOPEFNfHskywJS8oQ0/6hZhLXDqhep4Upcsz70DzmCjWSaI4dUod3SzqTMUpJuA3T/SGXrXAbVPalwoT61DjV8jtjs2IyekBirAO3FXq5oJCymjjYCN3XTUyi66O3R1zOIBkg3/RAqWECp3Eba5K9S6/JDdTnteGsQIGCMMGWn+Gys2Fgj1ehnEn1s6UKfQRHs1ZpYdldMior+Qinw5s74mKqA1MwjDId3unZ2iw0uh6wYAbpdCmNgIM427sTF/16y8dcoBPUVPTDvCK8siQSJA2eBYkN3Hy4+Zq1zf7qfUtzJRLOhQjNUDQzoasDo9p6uvjpaMyCeiYHzxzCvuU2scA+0VjrfpXxeRWRrNH5P6wzqKr4BQ0hA5//vbALT5bSaLa845nKvyAOiplTa+bKgxCExFM6fesCZ0ScY6qD2vxFdVmZDl9QMeAR352GaQXvutJsD7ZcGej7Pr7oG7uo8iuxCpiGAXLpMIFqLp3H2zW9D+7pHc55YMDpCvM2gcyXhq0Mvsjv5pjYd/x9SztKqusYabN2s5eOxS+ot498QnXLey0y7OXvDXe098ZaeAniC6nXnWe2V4lVxhGavvxM0jH7bMN/qOKKUFqSepVS87RJMDqhyDkLEuAOZ5mQWULnDAOdbdPfF7/U5ZJZdTVglREG1X9TonbnoQ==">
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334">
+</div>
+        <div class="container">
+            
+            <div class="header">
+                <h1><span id="lblAcademyName">LinguaGlobal Academy</span></h1>
+                <p>Your Gateway to Global Communication</p>
+            </div>
+
+            <div class="grid">
+                <div>
+                    <div class="card">
+                        <h2>About Our Academy</h2>
+                        <p><strong>What it is:</strong> <span id="lblDesc">A premier language learning platform designed for immersive tutoring.</span></p>
+                        <p><strong>Why it matters:</strong> <span id="lblImportance">Fluency opens global career opportunities and bridges cultural gaps.</span></p>
+                        <p><strong>How it works:</strong> <span id="lblHow">We pair you with certified native speakers for interactive 1-on-1 online sessions.</span></p>
+                    </div>
+
+                    <div class="card">
+                        <h2>Student Learning Dashboard</h2>
+                        <div style="margin-bottom: 25px;">
+                            <div class="metric-box">
+                                <div class="metric-num"><span id="lblHours">124</span></div>
+                                <div>Hours Studied</div>
+                            </div>
+                            <div class="metric-box">
+                                <div class="metric-num"><span id="lblLessons">48</span></div>
+                                <div>Lessons Finished</div>
+                            </div>
+                            <div class="metric-box">
+                                <div class="metric-num"><span id="lblProgress">78.5</span>%</div>
+                                <div>Total Progress</div>
+                            </div>
+                        </div>
+
+                        <h3>Subject Course Results (Grades)</h3>
+                        
+                            <div class="subject-row">
+                                <div class="subject-name">Spanish (B2) — Current Grade: 88%</div>
+                                <div class="bar-container">
+                                    <div class="bar-fill" style="width: 88%;">88%</div>
+                                </div>
+                            </div>
+                            <div class="subject-row">
+                                <div class="subject-name">French (A1) — Current Grade: 92%</div>
+                                <div class="bar-container">
+                                    <div class="bar-fill" style="width: 92%;">92%</div>
+                                </div>
+                            </div>
+                            <div class="subject-row">
+                                <div class="subject-name">German (A2) — Current Grade: 75%</div>
+                                <div class="bar-container">
+                                    <div class="bar-fill" style="width: 75%;">75%</div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="card">
+                        <h2>Student Profile</h2>
+                        <p><strong>Name:</strong> <span id="lblStudentName">John Doe</span></p>
+                        <p><strong>ID:</strong> <span id="lblStudentID">LA-2026-8941</span></p>
+                        <p><strong>Program:</strong> <span id="lblProgram">Dual-Language Immersive Track</span></p>
+                        <p><strong>Current Status:</strong> <span id="lblLevel">Intermediate (B2)</span></p>
+                    </div>
+
+                    <div class="card">
+                        <h2>Academy Tuition Plans</h2>
+                        <p>Standard Month-to-Month Access:</p>
+                        <span class="price-tag"><span id="lblMonthPrice">$49 / month</span></span>
+                        <p style="margin-top: 20px;">Annual Discounted Membership:</p>
+                        <span class="price-tag" style="background:#4A154B;"><span id="lblYearPrice">$450 / year (Save 25%)</span></span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </form>
+
+ </body></html>
